@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="pengus77" fetch="ssh://git@github.com" />
+	<project name="pengus77/vendor_xiaomi_grus" remote="pengus77" path="vendor/xiaomi/grus" revision="lineage-16.0"/>
+	<project name="pengus77/device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="lineage-16.0"/>
+	<project name="pengus77/kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="dev"/>
+	<project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="lineage-16.0"/>
+	<remove-project name="LineageOS/android_hardware_qcom_audio" revision="lineage-16.0-caf-845"/>
+	<project path="hardware/qcom/audio-caf/sdm845" name="PixelExperience/hardware_qcom_audio-caf_sdm845" remote="github" revision="pie-caf" />
+	<remove-project name="LineageOS/android_build" revision="lineage-16.0"/>
+	<project path="build/make" name="pengus77/lineage_build_tools" remote="pengus77" revision="lineage-16.0">
+    		<copyfile src="core/root.mk" dest="Makefile" />
+    		<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    		<linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    		<linkfile src="core" dest="build/core" />
+    		<linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    		<linkfile src="target" dest="build/target" />
+    		<linkfile src="tools" dest="build/tools" />
+  	</project>
+</manifest>
