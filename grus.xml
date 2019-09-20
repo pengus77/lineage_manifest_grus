@@ -3,7 +3,7 @@
 	<remote name="caf" fetch="https://source.codeaurora.org/quic/la/" review="codeaurora.org"/>
 	<remote name="pengus77" fetch="ssh://git@github.com" />
 	<project name="pengus77/vendor_xiaomi_grus" remote="pengus77" path="vendor/xiaomi/grus" revision="lineage-16.0"/>
-	<project name="pengus77/device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="lineage-16.0"/>
+	<project name="pengus77/device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="rr-pie"/>
 	<project name="pengus77/kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="dev"/>
 	<project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="lineage-16.0"/>
 
