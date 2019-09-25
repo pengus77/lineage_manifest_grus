@@ -10,18 +10,7 @@
 	<remove-project name="LineageOS/android_hardware_qcom_audio" revision="lineage-16.0-caf-845"/>
 	<project path="hardware/qcom/audio-caf/sdm845" name="PixelExperience/hardware_qcom_audio-caf_sdm845" remote="github" revision="pie-caf" />
 
-	<remove-project name="LineageOS/android_build" revision="lineage-16.0"/>
-	<project path="build/make" name="pengus77/lineage_build_tools" remote="pengus77" revision="lineage-16.0">
-    		<copyfile src="core/root.mk" dest="Makefile" />
-    		<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    		<linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    		<linkfile src="core" dest="build/core" />
-    		<linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    		<linkfile src="target" dest="build/target" />
-    		<linkfile src="tools" dest="build/tools" />
-  	</project>
-
-	<remove-project name="LineageOS/android_packages_apps_Dialer" path="packages/apps/Dialer" revision="lineage-16.0"/>
+	<remove-project name="LineageOS/android_packages_apps_Dialer" path="packages/apps/Dialer" />
 	<project name="pengus77/android_packages_apps_Dialer" path="packages/apps/Dialer" remote="pengus77" revision="lineage-16.0"/>
 
 	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
@@ -37,16 +26,11 @@
 	<project name="platform/external/libcxx" path="external/libcxx" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/>
 
 	<remove-project path="external/libcxxabi" name="platform/external/libcxxabi" />
-	<project name="platform/external/libcxxabi" path="external/libcxxabi" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/>
+	<project name="platform/external/libcxxabi" path="external/libcxxabi" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel" />
 
-	<project name="platform/external/xmlwriter" path="external/xmlwriter" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/>
+	<remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" />
+	<project path="frameworks/base" name="pengus77/frameworks_base" remote="pengus77" revision="lineage-16.0" />
 
-	<remove-project path="external/vulkan-validation-layers" name="platform/external/vulkan-validation-layers" groups="pdk" remote="aosp" />
-        <project name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/>
-
-	<remove-project path="hardware/libhardware" name="LineageOS/android_hardware_libhardware" groups="pdk" />
-	<remove-project path="hardware/libhardware_legacy" name="LineageOS/android_hardware_libhardware_legacy" groups="pdk" />
-
-	<project path="hardware/libhardware" name="platform/hardware/libhardware" remote="caf" revision="ks-aosp.lnx.1.0.r9-rel" />
-	<project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" remote="caf" revision="ks-aosp.lnx.1.0.r9-rel" />
+	<remove-project path="external/libtar" name="LineageOS/android_external_libtar" />
+	<project path="external/libtar" name="pengus77/external_libtar" remote="pengus77" revision="lineage-16.0" />
 </manifest>
