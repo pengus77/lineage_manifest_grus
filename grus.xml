@@ -12,12 +12,6 @@
 	<remove-project path="hardware/qcom/audio-caf/sdm845" name="android_hardware_qcom_audio" />
 	<project path="hardware/qcom/audio-caf/sdm845" name="PixelExperience/hardware_qcom_audio-caf_sdm845" remote="github" revision="pie-caf" />
 
-	<remove-project path="hardware/qcom/media-caf/sdm845" name="android_hardware_qcom_media" />
-	<project path="hardware/qcom/media-caf/sdm845" name="LineageOS/android_hardware_qcom_media" remote="github" revision="lineage-16.0-caf-845" />
-
-	<remove-project path="hardware/qcom/display-caf/sdm845" name="android_hardware_qcom_display" />
-	<project path="hardware/qcom/display-caf/sdm845" name="LineageOS/android_hardware_qcom_display" remote="github" revision="lineage-16.0-caf-845" />
-
 	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
 	<project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="data-ipa-cfg-mgr" remote="pengus77" revision="data.lnx.4.0.r19-rel" />
 
@@ -36,4 +30,10 @@
 
 	<remove-project path="vendor/bootleggers" name="vendor_bootleggers" />
 	<project name="vendor_bootleggers" remote="pengus77" path="vendor/bootleggers" revision="pie"/>
+
+	<remove-project path="frameworks/base" name="frameworks_base" />
+	<project path="frameworks/base" name="bootleggers_frameworks_base" remote="pengus77" revision="pie" />
+
+	<remove-project path="packages/apps/BootlegDumpster" name="packages_apps_BootlegDumpster" />
+	<project path="packages/apps/BootlegDumpster" name="packages_apps_BootlegDumpster" remote="pengus77" revision="pie" />
 </manifest>
