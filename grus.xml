@@ -2,38 +2,26 @@
 <manifest>
 	<remote name="caf" fetch="https://source.codeaurora.org/quic/la/" review="codeaurora.org"/>
 	<remote name="pengus77" fetch="ssh://git@github.com/pengus77" />
-	<remote name="aicp" fetch="https://github.com/AICP" />
+	<!--remote name="aicp" fetch="https://github.com/AICP" /-->
 
 	<project name="vendor_xiaomi_grus" remote="pengus77" path="vendor/xiaomi/grus" revision="lineage-16.0"/>
 	<project name="device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="bootleggers"/>
 	<project name="kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="dev"/>
-	<project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-16.0"/>
+	<!--project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-16.0"/-->
 
-	<remove-project path="hardware/qcom/audio-caf/sdm845" name="android_hardware_qcom_audio" />
-	<project path="hardware/qcom/audio-caf/sdm845" name="PixelExperience/hardware_qcom_audio-caf_sdm845" remote="github" revision="pie-caf" />
+	<!--remove-project path="hardware/qcom/audio-caf/sdm845" name="android_hardware_qcom_audio" />
+	<project path="hardware/qcom/audio-caf/sdm845" name="PixelExperience/hardware_qcom_audio-caf_sdm845" remote="github" revision="pie-caf" /-->
 
-	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
-	<project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="data-ipa-cfg-mgr" remote="pengus77" revision="data.lnx.4.0.r19-rel" />
-
-	<remove-project path="bionic" name="bionic" />
+	<!--remove-project path="bionic" name="bionic" />
 	<project name="platform/bionic" path="bionic" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/>
-	<project name="platform/external/arm-optimized-routines" path="external/arm-optimized-routines" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/>
+	<project name="platform/external/arm-optimized-routines" path="external/arm-optimized-routines" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/-->
 
-	<remove-project path="external/libcxx" name="platform/external/libcxx" />
-	<project name="platform/external/libcxx" path="external/libcxx" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/>
+	<!--remove-project path="external/libcxx" name="platform/external/libcxx" />
+	<project name="platform/external/libcxx" path="external/libcxx" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/-->
 
-	<remove-project path="external/libcxxabi" name="platform/external/libcxxabi" />
-	<project name="platform/external/libcxxabi" path="external/libcxxabi" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel" />
+	<!--remove-project path="external/libcxxabi" name="platform/external/libcxxabi" />
+	<project name="platform/external/libcxxabi" path="external/libcxxabi" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel" /-->
 
-	<project path="packages/apps/JamesDSPManager" name="packages_apps_JamesDSPManager" remote="pengus77" revision="lineage-16.0" />
-	<project path="frameworks/opt/jamesdsp" name="frameworks_opt_jamesdsp" remote="aicp" revision="p9.0" />
-
-	<remove-project path="vendor/bootleggers" name="vendor_bootleggers" />
-	<project name="vendor_bootleggers" remote="pengus77" path="vendor/bootleggers" revision="pie"/>
-
-	<remove-project path="frameworks/base" name="frameworks_base" />
-	<project path="frameworks/base" name="bootleggers_frameworks_base" remote="pengus77" revision="pie" />
-
-	<remove-project path="packages/apps/BootlegDumpster" name="packages_apps_BootlegDumpster" />
-	<project path="packages/apps/BootlegDumpster" name="packages_apps_BootlegDumpster" remote="pengus77" revision="pie" />
+	<!--project path="packages/apps/JamesDSPManager" name="packages_apps_JamesDSPManager" remote="pengus77" revision="lineage-16.0" />
+	<project path="frameworks/opt/jamesdsp" name="frameworks_opt_jamesdsp" remote="aicp" revision="p9.0" /-->
 </manifest>
