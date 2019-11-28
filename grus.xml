@@ -5,20 +5,29 @@
 	<remote name="aicp" fetch="https://github.com/AICP" />
 	<remote name="omni" fetch="https://github.com/omnirom" />
 
-	<project name="vendor_xiaomi_grus" remote="pengus77" path="vendor/xiaomi/grus" revision="lineage-16.0"/>
-	<project name="device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="lineage-16.0"/>
+	<project name="vendor_xiaomi_grus" remote="pengus77" path="vendor/xiaomi/grus" revision="lineage-17.0"/>
+	<project name="device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="lineage-17.0"/>
 	<project name="kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="dev"/>
-	<project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="lineage-16.0"/>
+	<project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="lineage-17.0"/>
 
-	<remove-project name="LineageOS/android_hardware_qcom_audio" revision="lineage-16.0-caf-845"/>
-	<project path="hardware/qcom/audio-caf/sdm845" name="PixelExperience/hardware_qcom_audio-caf_sdm845" remote="github" revision="pie-caf" />
+	<remove-project path="hardware/qcom-caf/sdm845/audio" name="LineageOS/android_hardware_qcom_audio" />
+	<project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" remote="pengus77" revision="lineage-17.0" />
 
-	<remove-project name="LineageOS/android_packages_apps_Dialer" path="packages/apps/Dialer" />
-	<project name="android_packages_apps_Dialer" path="packages/apps/Dialer" remote="pengus77" revision="lineage-16.0"/>
+	<remove-project path="build/make" name="LineageOS/android_build" />
+	<project path="build/make" name="android_build" remote="pengus77" revision="lineage-17.0" />
 
 	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
-	<project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="data-ipa-cfg-mgr" remote="pengus77" revision="data.lnx.4.0.r19-rel" />
+	<project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="data-ipa-cfg-mgr" remote="pengus77" revision="data.lnx.5.0.r4-rel" />
 
+	<remove-project path="vendor/qcom/opensource/dataservices" name="LineageOS/android_vendor_qcom_opensource_dataservices" />
+	<project path="vendor/qcom/opensource/dataservices" name="platform/vendor/qcom-opensource/dataservices" remote="caf" revision="data.lnx.5.0.r4-rel" />
+
+	<remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" />
+	<project path="frameworks/base" name="frameworks_base" remote="pengus77" revision="lineage-17.0" />
+
+	<!--remove-project name="LineageOS/android_packages_apps_Dialer" path="packages/apps/Dialer" />
+	<project name="android_packages_apps_Dialer" path="packages/apps/Dialer" remote="pengus77" revision="lineage-16.0"/>
+	
 	<remove-project path="system/chre" name="platform/system/chre" />
 	<project path="system/chre" name="android_system_chre" remote="pengus77" revision="pie-caf" />
 
@@ -26,7 +35,7 @@
 	<project name="platform/bionic" path="bionic" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/>
 	<project name="platform/external/arm-optimized-routines" path="external/arm-optimized-routines" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/>
 
-	<remove-project path="external/libcxx" name="platform/external/libcxx" />
+	<remove-project path="external/libcxx" name="LineageOS/android_external_libcxx" groups="pdk" />
 	<project name="platform/external/libcxx" path="external/libcxx" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/>
 
 	<remove-project path="external/libcxxabi" name="platform/external/libcxxabi" />
@@ -50,5 +59,5 @@
 	<remove-project path="packages/services/Telephony" name="LineageOS/android_packages_services_Telephony" />
 	<project path="packages/services/Telephony" name="packages_services_Telephony" remote="pengus77" revision="lineage-16.0" />
 
-	<project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="omni" revision="android-9.0" />
+	<project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="omni" revision="android-9.0" /-->
 </manifest>
