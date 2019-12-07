@@ -7,7 +7,7 @@
 
 	<project name="vendor_xiaomi_grus" remote="pengus77" path="vendor/xiaomi/grus" revision="lineage-17.0"/>
 	<project name="device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="lineage-17.0"/>
-	<project name="kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="dev"/>
+	<project name="kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="dev-q"/>
 	<project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="lineage-17.0"/>
 
 	<remove-project path="hardware/qcom-caf/sdm845/audio" name="LineageOS/android_hardware_qcom_audio" />
@@ -24,40 +24,4 @@
 
 	<remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" />
 	<project path="frameworks/base" name="frameworks_base" remote="pengus77" revision="lineage-17.0" />
-
-	<!--remove-project name="LineageOS/android_packages_apps_Dialer" path="packages/apps/Dialer" />
-	<project name="android_packages_apps_Dialer" path="packages/apps/Dialer" remote="pengus77" revision="lineage-16.0"/>
-	
-	<remove-project path="system/chre" name="platform/system/chre" />
-	<project path="system/chre" name="android_system_chre" remote="pengus77" revision="pie-caf" />
-
-	<remove-project path="bionic" name="LineageOS/android_bionic" />
-	<project name="platform/bionic" path="bionic" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/>
-	<project name="platform/external/arm-optimized-routines" path="external/arm-optimized-routines" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/>
-
-	<remove-project path="external/libcxx" name="LineageOS/android_external_libcxx" groups="pdk" />
-	<project name="platform/external/libcxx" path="external/libcxx" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/>
-
-	<remove-project path="external/libcxxabi" name="platform/external/libcxxabi" />
-	<project name="platform/external/libcxxabi" path="external/libcxxabi" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel" />
-
-	<remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" />
-	<project path="frameworks/base" name="frameworks_base" remote="pengus77" revision="lineage-16.0" />
-
-	<remove-project path="external/libtar" name="LineageOS/android_external_libtar" />
-	<project path="external/libtar" name="external_libtar" remote="pengus77" revision="lineage-16.0" />
-
-	<project path="packages/apps/JamesDSPManager" name="packages_apps_JamesDSPManager" remote="pengus77" revision="lineage-16.0" />
-	<project path="frameworks/opt/jamesdsp" name="frameworks_opt_jamesdsp" remote="aicp" revision="p9.0" />
-
-	<remove-project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" />
-	<project path="packages/apps/Settings" name="packages_apps_Settings" remote="pengus77" revision="lineage-16.0" />
-
-	<remove-project path="lineage-sdk" name="LineageOS/android_lineage-sdk" />
-	<project path="lineage-sdk" name="android_lineage-sdk" remote="pengus77" revision="lineage-16.0" />
-
-	<remove-project path="packages/services/Telephony" name="LineageOS/android_packages_services_Telephony" />
-	<project path="packages/services/Telephony" name="packages_services_Telephony" remote="pengus77" revision="lineage-16.0" />
-
-	<project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="omni" revision="android-9.0" /-->
 </manifest>
