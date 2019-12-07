@@ -13,15 +13,9 @@
 	<remove-project path="hardware/qcom-caf/sdm845/audio" name="LineageOS/android_hardware_qcom_audio" />
 	<project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" remote="pengus77" revision="lineage-17.0" />
 
-	<remove-project path="build/make" name="LineageOS/android_build" />
-	<project path="build/make" name="android_build" remote="pengus77" revision="lineage-17.0" />
-
 	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
 	<project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="data-ipa-cfg-mgr" remote="pengus77" revision="data.lnx.5.0.r4-rel" />
 
 	<remove-project path="vendor/qcom/opensource/dataservices" name="LineageOS/android_vendor_qcom_opensource_dataservices" />
 	<project path="vendor/qcom/opensource/dataservices" name="platform/vendor/qcom-opensource/dataservices" remote="caf" revision="data.lnx.5.0.r4-rel" />
-
-	<remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" />
-	<project path="frameworks/base" name="frameworks_base" remote="pengus77" revision="lineage-17.0" />
 </manifest>
