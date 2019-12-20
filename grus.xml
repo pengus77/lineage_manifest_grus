@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="caf" fetch="https://source.codeaurora.org/quic/la/" review="codeaurora.org"/>
 	<remote name="pengus77" fetch="ssh://git@github.com/pengus77" />
-	<!--remote name="aicp" fetch="https://github.com/AICP" /-->
 
-	<project name="vendor_xiaomi_grus" remote="pengus77" path="vendor/xiaomi/grus" revision="lineage-16.0"/>
-	<project name="device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="bootleggers"/>
-	<project name="kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="dev"/>
-	<!--project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-16.0"/-->
+	<project name="vendor_xiaomi_grus" remote="pengus77" path="vendor/xiaomi/grus" revision="lineage-17.0"/>
+	<project name="device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="aex"/>
+	<project name="kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="dev-q"/>
+	<project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-17.0"/>
 
-	<!--remove-project path="hardware/qcom/audio-caf/sdm845" name="android_hardware_qcom_audio" />
-	<project path="hardware/qcom/audio-caf/sdm845" name="PixelExperience/hardware_qcom_audio-caf_sdm845" remote="github" revision="pie-caf" /-->
-
-	<!--remove-project path="bionic" name="bionic" />
-	<project name="platform/bionic" path="bionic" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/>
-	<project name="platform/external/arm-optimized-routines" path="external/arm-optimized-routines" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/-->
-
-	<!--remove-project path="external/libcxx" name="platform/external/libcxx" />
-	<project name="platform/external/libcxx" path="external/libcxx" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel"/-->
-
-	<!--remove-project path="external/libcxxabi" name="platform/external/libcxxabi" />
-	<project name="platform/external/libcxxabi" path="external/libcxxabi" remote="caf" revision="ks-aosp.lnx.1.0.r6-rel" /-->
-
-	<!--project path="packages/apps/JamesDSPManager" name="packages_apps_JamesDSPManager" remote="pengus77" revision="lineage-16.0" />
-	<project path="frameworks/opt/jamesdsp" name="frameworks_opt_jamesdsp" remote="aicp" revision="p9.0" /-->
+	<remove-project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" revision="lineage-17.0-caf-sdm845" />
+        <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" remote="pengus77" revision="lineage-17.0" />
 </manifest>
