@@ -3,9 +3,8 @@
 	<remote name="pengus77" fetch="ssh://git@github.com/pengus77" />
 
 	<project name="vendor_xiaomi_grus" remote="pengus77" path="vendor/xiaomi/grus" revision="lineage-17.0"/>
-	<project name="device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="aex"/>
+	<project name="device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="bliss-q"/>
 	<project name="kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="dev-q"/>
-	<project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-17.0"/>
 
 	<remove-project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" revision="lineage-17.0-caf-sdm845" />
         <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" remote="pengus77" revision="lineage-17.0" />
