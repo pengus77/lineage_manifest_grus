@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<remote name="pengus77" fetch="ssh://git@github.com/pengus77" />
+	<remote name="caf" fetch="https://source.codeaurora.org/quic/la" />
 
 	<project name="vendor_xiaomi_grus" remote="pengus77" path="vendor/xiaomi/grus" revision="lineage-17.0"/>
 	<project name="device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="bliss-q"/>
-	<project name="kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="dev-q"/>
+	<project name="kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="dev"/>
 
-	<remove-project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" revision="lineage-17.0-caf-sdm845" />
-        <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" remote="pengus77" revision="lineage-17.0" />
+	<remove-project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" revision="lineage-17.1-caf-sdm845" />
+        <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" remote="pengus77" revision="lineage-17.1" />
+
+	<remove-project path="frameworks/base" name="platform_frameworks_base" />
+	<project path="frameworks/base" name="frameworks_base" remote="pengus77" revision="bliss-q" />
+
+	<remove-project path="packages/apps/Blissify" name="platform_packages_apps_Blissify" />
+	<project path="packages/apps/Blissify" name="packages_apps_Blissify" remote="pengus77" revision="bliss-q" />
+
+	<remove-project path="packages/apps/Settings" name="platform_packages_apps_Settings" />
+	<project path="packages/apps/Settings" name="packages_apps_Settings" remote="pengus77" revision="bliss-q" />
+
+	<remove-project path="vendor/bliss" name="platform_vendor_bliss" />
+	<project path="vendor/bliss" name="vendor_bliss" remote="pengus77" revision="bliss-q" />
+
+	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" />
+	<project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" remote="caf" revision="data.lnx.5.0.r4-rel" />
 </manifest>
