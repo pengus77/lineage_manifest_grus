@@ -10,6 +10,17 @@
 	<remove-project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" revision="lineage-17.1-caf-sdm845" />
         <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" remote="pengus77" revision="lineage-17.1" />
 
+	<remove-project path="build/make" name="platform_build_make" />
+	<project path="build/make" name="android_build" remote="pengus77" revision="bliss-q" >
+		<copyfile src="core/root.mk" dest="Makefile" />
+		<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+		<linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+		<linkfile src="core" dest="build/core" />
+		<linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+		<linkfile src="target" dest="build/target" />
+		<linkfile src="tools" dest="build/tools" />
+	</project>
+
 	<remove-project path="frameworks/base" name="platform_frameworks_base" />
 	<project path="frameworks/base" name="frameworks_base" remote="pengus77" revision="bliss-q" />
 
