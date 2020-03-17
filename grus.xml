@@ -24,7 +24,7 @@
 		<linkfile src="tools" dest="build/tools" />
 	</project>
 
-	<remove-project path="build/soong" name="platform_build_soong" >
+	<remove-project path="build/soong" name="platform_build_soong" />
 	<project path="build/soong" name="build_soong" remote="pengus77" revision="bliss-q" >
 		<linkfile src="root.bp" dest="Android.bp" />
 		<linkfile src="bootstrap.bash" dest="bootstrap.bash" />
