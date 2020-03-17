@@ -24,6 +24,12 @@
 		<linkfile src="tools" dest="build/tools" />
 	</project>
 
+	<remove-project path="build/soong" name="platform_build_soong" >
+	<project path="build/soong" name="build_soong" remote="pengus77" revision="bliss-q" >
+		<linkfile src="root.bp" dest="Android.bp" />
+		<linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+	</project>
+
 	<remove-project path="frameworks/base" name="platform_frameworks_base" />
 	<project path="frameworks/base" name="frameworks_base" remote="pengus77" revision="bliss-q" />
 
@@ -38,4 +44,10 @@
 
 	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" />
 	<project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" remote="caf" revision="data.lnx.5.0.r4-rel" />
+
+	<remove-project path="art" name="platform_art" />
+	<project name="platform/art" path="art" revision="refs/heads/ks-aosp.lnx.2.0.r5-rel" remote="caf"/>
+
+	<remove-project path="libcore" name="platform_libcore" />
+	<project name="platform/libcore" path="libcore" revision="refs/heads/ks-aosp.lnx.2.0.r5-rel" remote="caf"/>
 </manifest>
