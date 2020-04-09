@@ -13,35 +13,6 @@
 	<remove-project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" revision="lineage-17.1-caf-sdm845" />
 	<project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" remote="pengus77" revision="lineage-17.1" />
 
-	<remove-project path="build/make" name="platform_build_make" />
-	<project path="build/make" name="android_build" remote="pengus77" revision="bliss-q" >
-		<copyfile src="core/root.mk" dest="Makefile" />
-		<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-		<linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-		<linkfile src="core" dest="build/core" />
-		<linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-		<linkfile src="target" dest="build/target" />
-		<linkfile src="tools" dest="build/tools" />
-	</project>
-
-	<remove-project path="frameworks/base" name="platform_frameworks_base" />
-	<project path="frameworks/base" name="frameworks_base" remote="pengus77" revision="bliss-q" />
-
-	<remove-project path="packages/apps/Blissify" name="platform_packages_apps_Blissify" />
-	<project path="packages/apps/Blissify" name="packages_apps_Blissify" remote="pengus77" revision="bliss-q" />
-
-	<remove-project path="packages/apps/Settings" name="platform_packages_apps_Settings" />
-	<project path="packages/apps/Settings" name="packages_apps_Settings" remote="pengus77" revision="bliss-q" />
-
-	<remove-project path="vendor/bliss" name="platform_vendor_bliss" />
-	<project path="vendor/bliss" name="vendor_bliss" remote="pengus77" revision="bliss-q" />
-
 	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" />
 	<project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" remote="caf" revision="data.lnx.5.0.r4-rel" />
-
-	<remove-project path="art" name="platform_art" />
-	<project name="platform/art" path="art" revision="refs/heads/ks-aosp.lnx.2.0.r5-rel" remote="caf"/>
-
-	<remove-project path="libcore" name="platform_libcore" />
-	<project name="platform/libcore" path="libcore" revision="refs/heads/ks-aosp.lnx.2.0.r5-rel" remote="caf"/>
 </manifest>
