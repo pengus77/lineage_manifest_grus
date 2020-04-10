@@ -2,26 +2,35 @@
 <manifest>
 	<remote name="caf" fetch="https://source.codeaurora.org/quic/la/" review="codeaurora.org"/>
 	<remote name="pengus77" fetch="ssh://git@github.com/pengus77" />
-	<remote name="aicp" fetch="https://github.com/AICP" />
-	<remote name="omni" fetch="https://github.com/omnirom" />
+	<remote name="BlissRoms" fetch="ssh://git@github.com/BlissRoms" />
 
 	<project name="vendor_xiaomi_grus" remote="pengus77" path="vendor/xiaomi/grus" revision="lineage-17.0"/>
 	<project name="device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="lineage-17.0"/>
-	<project name="kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="dev-q"/>
-	<project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="lineage-17.0"/>
+	<project name="kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="dev"/>
 
 	<remove-project path="hardware/qcom-caf/sdm845/audio" name="LineageOS/android_hardware_qcom_audio" />
-	<project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" remote="pengus77" revision="lineage-17.0" />
+	<project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" remote="pengus77" revision="lineage-17.1" />
+
+	<remove-project path="hardware/qcom-caf/sdm845/media" name="LineageOS/android_hardware_qcom_media" />
+	<project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" remote="pengus77" revision="lineage-17.1" />
 
 	<remove-project path="build/make" name="LineageOS/android_build" />
-	<project path="build/make" name="android_build" remote="pengus77" revision="lineage-17.0" />
-
-	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
-	<project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="data-ipa-cfg-mgr" remote="pengus77" revision="data.lnx.5.0.r4-rel" />
-
-	<remove-project path="vendor/qcom/opensource/dataservices" name="LineageOS/android_vendor_qcom_opensource_dataservices" />
-	<project path="vendor/qcom/opensource/dataservices" name="platform/vendor/qcom-opensource/dataservices" remote="caf" revision="data.lnx.5.0.r4-rel" />
+	<project path="build/make" name="android_build" remote="pengus77" revision="lineage-17.1" />
 
 	<remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" />
-	<project path="frameworks/base" name="frameworks_base" remote="pengus77" revision="lineage-17.0" />
+	<project path="frameworks/base" name="frameworks_base" remote="pengus77" revision="lineage-17.1" />
+
+	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
+        <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" remote="caf" revision="data.lnx.5.0.r4-rel" />
+
+	<remove-project path="build/soong" name="LineageOS/android_build_soong" />
+	<project path="build/soong" name="build_soong" remote="pengus77" revision="lineage-17.1" />
+
+	<remove-project path="art" name="LineageOS/android_art" />
+	<project path="art" name="platform_art" remote="pengus77" revision="lineage-17.1" />
+
+	<remove-project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" />
+	<project path="packages/apps/Settings" name="packages_apps_Settings" remote="pengus77" revision="lineage-17.1" />
+
+	<project path="external/motorola/FaceUnlock" name="PixelExperience/external_motorola_faceunlock" remote="github" revision="ten" />
 </manifest>
