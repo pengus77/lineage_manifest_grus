@@ -15,4 +15,6 @@
 
 	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" />
 	<project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" remote="caf" revision="data.lnx.5.0.r4-rel" />
+
+	<project path="packages/apps/Exchange" name="android_packages_apps_Exchange" remote="los" revision="lineage-17.1"/>
 </manifest>
