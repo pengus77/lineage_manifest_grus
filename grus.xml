@@ -2,25 +2,23 @@
 <manifest>
 	<remote name="pengus77" fetch="ssh://git@github.com/pengus77" />
 	<remote name="caf" fetch="https://source.codeaurora.org/quic/la" />
+	<remote name="pe" fetch="https://github.com/PixelExperience" />
 
 	<project name="device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="bliss-q"/>
 
-	<remove-project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" revision="lineage-17.1-caf-sdm845" />
+	<remove-project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" />
 	<project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" remote="pengus77" revision="lineage-17.1" />
 
-	<remove-project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" revision="lineage-17.1-caf-sdm845" />
+	<remove-project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" />
 	<project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" remote="pengus77" revision="lineage-17.1" />
+
+	<remove-project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" />
+	<project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom-caf_sdm845_display" remote="pe" revision="ten" />
 
 	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" />
 	<project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" remote="caf" revision="data.lnx.5.0.r4-rel" />
 
 	<project path="packages/apps/Exchange" name="android_packages_apps_Exchange" remote="los" revision="lineage-17.1"/>
-
-	<remove-project path="packages/apps/Email" name="platform/packages/apps/Email" />
-	<project path="packages/apps/Email" name="android_packages_apps_Email" remote="los" revision="lineage-17.1" />
-
-	<remove-project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" />
-	<project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="los" revision="lineage-17.1" />
 
 	<remove-project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" />
 	<project path="packages/apps/Trebuchet" name="platform_packages_apps_Trebuchet" remote="BlissRoms" revision="q" />
