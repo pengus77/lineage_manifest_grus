@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="pengus77" fetch="ssh://git@github.com/pengus77" />
+	<remote name="caf" fetch="https://source.codeaurora.org/quic/la" />
+	<remote name="pe" fetch="https://github.com/PixelExperience" />
+	<remote name="los" fetch="https://github.com/LineageOS" />
+	<remote name="bliss" fetch="https://github.com/BlissRoms" />
+
+	<!-- device specific -->
+	<project name="device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" revision="r"/>
+	<project name="vendor_xiaomi_grus" remote="pengus77" path="vendor/xiaomi/grus" revision="12.0.1.0-r"/>
+	<project name="kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="caf-q"/>
+
+	<!-- telephony -->
+	<project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="los" revision="lineage-17.1" />
+
+	<!-- nfc -->
+	<project path="vendor/nxp/opensource/pn5xx/halimpl" name="vendor_nxp_opensource_halimpl" revision="aosp_r" remote="pengus77" />
+	<project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="vendor_nxp_opensource_hidlimpl" revision="aosp_r" remote="pengus77" />
+	<project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="vendor_nxp_opensource_packages_apps_Nfc" remote="pengus77" revision="aosp_r" />
+	<project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="vendor_nxp_opensource_external_libnfc-nci" remote="pengus77" revision="aosp_r" />
+	<project path="vendor/nxp/opensource/commonsys/frameworks" name="vendor_nxp_opensource_frameworks" remote="pengus77" revision="aosp_r" />
+	<project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="los" revision="lineage-17.1"/>
+
+	<!-- fwb -->
+	<remove-project name="frameworks_base" path="frameworks/base" />
+	<project name="frameworks_base" remote="pengus77" path="frameworks/base" revision="aosp_r"/>
+
+	<!-- Nfc -->
+	<remove-project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
+	<project name="packages_apps_nfc" remote="pengus77" path="packages/apps/Nfc" revision="aosp_r"/>
+
+	<!-- IPA -->
+	<remove-project name="vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" />
+	<project name="data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="pengus77" revision="aosp_r" />
+</manifest>
