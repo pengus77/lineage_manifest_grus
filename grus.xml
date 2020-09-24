@@ -26,6 +26,10 @@
 	<remove-project name="frameworks_base" path="frameworks/base" />
 	<project name="frameworks_base" remote="pengus77" path="frameworks/base" revision="aosp_r"/>
 
+	<!-- settings -->
+	<remove-project path="packages/apps/Settings" name="packages_apps_Settings" />
+	<project name="packages_apps_Settings" remote="pengus77" path="packages/apps/Settings" revision="aosp_r"/>
+
 	<!-- Nfc -->
 	<remove-project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
 	<project name="packages_apps_nfc" remote="pengus77" path="packages/apps/Nfc" revision="aosp_r"/>
