@@ -7,12 +7,4 @@
 	<project name="device_xiaomi_grus" remote="pengus77" path="device/xiaomi/grus" />
 	<project name="vendor_xiaomi_grus" remote="pengus77" path="vendor/xiaomi/grus" revision="12.0.1.0-r"/>
 	<project name="kowalski-grus" remote="pengus77" path="kernel/xiaomi/grus" revision="caf-q"/>
-
-	<!-- nfc -->
-	<project path="vendor/nxp/opensource/pn5xx/halimpl" name="vendor_nxp_opensource_halimpl" revision="aosp_r" remote="pengus77" />
-	<project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="vendor_nxp_opensource_hidlimpl" revision="aosp_r" remote="pengus77" />
-	<project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="vendor_nxp_opensource_packages_apps_Nfc" remote="pengus77" revision="aosp_r" />
-	<project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="vendor_nxp_opensource_external_libnfc-nci" remote="pengus77" revision="aosp_r" />
-	<project path="vendor/nxp/opensource/commonsys/frameworks" name="vendor_nxp_opensource_frameworks" remote="pengus77" revision="aosp_r" />
-	<project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="los" revision="lineage-17.1"/>
 </manifest>
